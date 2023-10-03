@@ -1,0 +1,161 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+body {
+    background-image: url('../img/Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    display: grid;
+    grid-template-areas:"nav nav"
+    "aside main"
+    "footer footer";
+    grid-template-rows: 11% 89% 10%;
+    grid-template-columns: 1fr 1fr;
+}
+aside {
+    margin: 0;
+    grid-area: aside;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    grid-area: nav;
+    padding-top: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+main {
+    padding: 30px;
+    grid-area: main;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tulisanpkm {
+    margin-block: auto;
+    color: #000;
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.logo {
+    padding-left: 10%;
+    display: flex;
+}
+main img {
+    width: 80%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+.bungkusan-1 p {
+    background: linear-gradient(224deg, #FFF 24.54%, #FFA902 123.7%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: screen;
+    font-family: Josefin Sans;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.8px;
+}
+.bungkusan-1 {
+    margin-top: -12%;
+    text-align: left;
+    width: 356px;
+    height: auto;
+}
+.bungkusan-2 {
+    margin-top: -22%;
+    text-align: left;
+    width: 539px;
+    height: auto;
+}
+.bungkusan-2 p {
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+.tulisan2 {
+    justify-self: center;
+    width: 539px;
+    height: 104px;
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+.lanjut-start {
+    text-decoration: none;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 157px;
+    height: 61px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 232, 215, 0.25);
+    background: #CE8D5E;
+    box-shadow: 0px 4px 4px 0px #FFF;
+}
+.tulis-lanjut {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+.footer {
+    margin-top: -2%;
+    grid-area: footer;
+    padding-left: 7%;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+}

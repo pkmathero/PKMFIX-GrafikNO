@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo pkm 1.png')}}" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style3.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <title>PKM-KC ATHERO</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo pkm navbar.png')}}" alt="">
+            <div class="tulisanpkm">PKM-KC USK</div>
+        </div>
+        <ul class="navbar-list">
+            <li><a href="#"><img src="{{ url_for('static', filename='img/Vector about.png')}}" alt="">ABOUT</a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/Vector team.png')}}" alt="">TEAM</a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/Vector contact.png')}}" alt="">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- isi content -->
+    <div class="container">
+            <div class="judul-hal"><div class="teks-judul">HASIL PENGUKURAN</div></div>
+            <aside class="kiri">
+                <div class="nyeri-dada">
+                    <div class="tipe-nyeri">
+                        <div class="tulisan-nyeri">Tipe Nyeri Dada</div>
+                        <img class="panah1" src="{{ url_for('static', filename='img/ep_arrow-up-bold.png')}}" alt="">
+                    </div>
+                    <div class="penjelasan-nyeri"><br><br>Tipe 1. Nyeri Dada Seperti Sakit di Dada Tengah (Typical Angina)<br>
+                        Kadang-kadang, dada kita bisa terasa berat atau seperti terbakar di bagian tengahnya. Ini bisa terjadi ketika kita berolahraga keras atau merasa sangat khawatir. Biasanya, jika kita istirahat atau minum obat tertentu, sakitnya akan hilang.<br>
+                        
+                        Tipe 2. Sakit di Dada yang Tidak Biasa (Atypical Angina)<br>
+                        Terkadang, dada kita bisa terasa sakit tapi tidak seberat yang pertama. Sakitnya bisa di mana saja di dada kita, dan mungkin tidak terjadi setelah kita bergerak banyak atau merasa stres. Obat mungkin tidak selalu membuatnya hilang.<br>
+                        
+                        Tipe 3. Sakit di Dada yang Bukan Karena Masalah Jantung (Non-Anginal Pain)<br>
+                        Ada juga sakit di dada yang bukan karena jantung kita. Ini bisa disebabkan oleh berbagai hal, seperti otot yang lelah, masalah pada perut, atau bahkan ketika kita batuk atau bernapas dalam-dalam. Ini bukan tanda-tanda masalah dengan jantung kita.<br>
+                        
+                        Tipe 4. Tidak Ada Sakit di Dada (Asymptomatic)<br>
+                        Tidak merasa sakit di dada sama sekali, namun ini dapat terjadi meskipun ada masalah dengan jantung kita. Ini bisa terjadi pada orang dewasa yang lebih tua atau orang dengan diabetes, dan ini berarti kita harus lebih berhati-hati untuk menjaga kesehatan jantung kita.</div>
+                </div>
+
+            <div class="Exercise-angina">
+                <div class="tipe-angina">
+                    <div class="tulisan-angina">Exercise Angina</div>
+                    <img class="panah2" src="{{ url_for('static', filename='img/ep_arrow-up-bold.png')}}" alt="">
+                </div>
+                
+                <div class="penjelasan-angina"><br><br>Exercise angina adalah sakit di dada yang terjadi ketika kita bermain terlalu keras atau berolahraga dan jantung kita tidak bisa mengikuti. Jantung kita membutuhkan darah dan oksigen untuk bekerja dengan baik, tetapi kadang-kadang ada halangan di dalam pembuluh darah yang membawa darah dan oksigen ke jantung. Hal ini bisa disebabkan oleh kotoran yang menempel di dinding pembuluh darah, seperti lemak atau gula. Ketika kita bermain terlalu keras, jantung kita membutuhkan lebih banyak darah dan oksigen, tetapi halangan ini membuatnya sulit untuk sampai ke jantung. Akibatnya, jantung kita merasa kesulitan dan mengirim sinyal sakit ke dada kita. Sakit ini biasanya akan hilang jika kita berhenti bermain atau mengurangi kecepatan kita.</div>
+            </div>
+        </aside>
+        <aside class="kanan1"><div class="input">
+            <div class="parameter">
+            <ul>
+                <li>Jenis Kelamain</li>
+                <li>Suhu Lingkungan (Temperature)</li>
+                <li>Denyut Jantung Maksimum (BPM)</li>
+                <li>Tipe Nyeri Dada</li>
+                <li>Apakah Anda Mengalami Exercise Angina ?</li>
+            </ul></div>
+            <div class="masukan">
+                <ul>
+                    <li>
+                        <form id="formGender">
+                            <label class="gender">
+                                <input class="R-dio" type="radio" id="Laki" name="gender" value="1"> Pria
+                            </label>
+                            <label class="gender">
+                                <input class="R-dio" type="radio" id="Perempuan" name="gender" value="0"> Wanita
+                            </label>    
+                        </form>
+                    </li>
+                    <li>
+                        <input type="number" id="input1" placeholder="Suhu antara 17 - 36°C"> <span id="error-message1" style="color: red;"></span>  
+                    </li> 
+                    <li>
+                        <input type="number" id="input2" placeholder="Diantara 60 dan 220"> <span id="error-message2" style="color: red;"></span>
+                    </li>
+                    <li>
+                        <select id="Nyeri">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </li>
+                    <li>
+                        <form id="formAngina">
+                            <label class="angina">
+                                <input class="R-dio-A" type="radio" id="Ya" name="Angina" value="1"> Ya
+                            </label>
+                            <label class="angina">
+                                <input class="R-dio-A" type="radio" id="Tidak" name="Angina" value="0"> Tidak
+                            </label>    
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div></aside>
+        <aside class="kanan2">
+            <a class="lanjut2-home" href="http://127.0.0.1:5000/"><img src="{{ url_for('static', filename='img/Arrow 3.png')}}" alt=""><div class="tulis-lanjut2">Kembali</div></a>
+            <button class="lanjut2" id="tombol"><div class="tulis-lanjut2">Prediksi </div><img src="{{ url_for('static', filename='img/Arrow 3.png')}}" alt=""></button>
+        </aside>
+        <div class="tidak-nampak">
+            <h4 id="BPM"></h4>
+            <h4 id="SPO2"></h4>
+        </div>
+    </div>
+    <script type="module" src="{{ url_for('static', filename='script.js')}}"></script>
+    <script src="{{ url_for('static', filename='script_css.js')}}"></script>
+    <!-- halaman 2 -->
+        <!-- Halaman Hasil -->
+    <div class="container1">
+            <div class="judul-hal1"><div class="teks-judul1">HASIL PREDIKSI</div></div>
+            <!-- kondisi normal -->
+            <div class="status1"><div id="hasil" class="status-box1"></div></div>
+            <div class="deskrip1"><div class="kata-deskripsi1">Hasil prediksi menunjukkan aktivitas normal pada jantung. Namun, jika Anda memiliki kekhawatiran atau perlu dukungan tambahan, kami sarankan untuk berkonsultasi dengan spesialis atau dukungan medis sesuai kebutuhan.</div></div>
+            <!-- hasil tabel -->
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Nilai</th>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td class="j-k"></td>
+                    </tr>
+                    <tr>
+                        <td>Suhu</td>
+                        <td class="sh"></td>
+                    </tr>
+                    <tr>
+                        <td>MAX BPM</td>
+                        <td class="m-bpm"></td>
+                    </tr>
+                    <tr>
+                        <td>BPM</td>
+                        <td class="bpm-t"></td>
+                    </tr>
+                    <tr>
+                        <td>SPO2</td>
+                        <td class="spo-t"></td>
+                    </tr>
+                    <tr>
+                        <td>Tipe Nyeri Dada</td>
+                        <td class="Nd"></td>
+                    </tr>
+                    <tr>
+                        <td>Exercise Angina</td>
+                        <td class="Ea"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <aside class="kiri1"><button class="lanjut1" id="kembali-ke-perhitungan"><img src="{{ url_for('static', filename='img/Arrow 3.png')}}" alt=""><div class="tulis-lanjut1"> Kembali ke pengecekan</div></button></aside>
+            <aside class="kanan1"><a class="lanjut1" href="http://127.0.0.1:5000/home"><div class="tulis-lanjut1">HOME </div><img src="{{ url_for('static', filename='img/Arrow 3.png')}}" alt=""></a></aside>
+    </div>
+        <!-- Halaman Hasil 2-->
+    <div class="container2">
+            <div class="judul-hal1"><div class="teks-judul1">HASIL PREDIKSI</div></div>
+            <!-- kondisi tidak normal -->
+            <div class="status1"><div id="hasil2" class="status-box1"></div></div>
+            <div class="deskrip1"><div class="kata-deskripsi1">Hasil prediksi menunjukkan adanya aktivitas yang tidak normal pada jantung. Namun, perlu diingat bahwa ini hanya alat prediksi dan tidak menggantikan konsultasi medis profesional. Disarankan untuk berkonsultasi dengan dokter untuk evaluasi lebih lanjut dan diagnosis yang akurat.</div></div>
+            <!-- hasil tabel -->
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Nilai</th>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td class="j-k1"></td>
+                    </tr>
+                    <tr>
+                        <td>Suhu</td>
+                        <td class="sh1"></td>
+                    </tr>
+                    <tr>
+                        <td>MAX BPM</td>
+                        <td class="m-bpm1"></td>
+                    </tr>
+                    <tr>
+                        <td>BPM</td>
+                        <td class="bpm-t1"></td>
+                    </tr>
+                    <tr>
+                        <td>SPO2</td>
+                        <td class="spo-t1"></td>
+                    </tr>
+                    <tr>
+                        <td>Tipe Nyeri Dada</td>
+                        <td class="Nd1"></td>
+                    </tr>
+                    <tr>
+                        <td>Exercise Angina</td>
+                        <td class="Ea1"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <aside class="kiri1"><button class="lanjut1" id="kembali-ke-perhitungan1"><img src="{{ url_for('static', filename='img/Arrow 3.png')}}" alt=""><div class="tulis-lanjut1"> Kembali ke pengecekan</div></button></aside>
+            <aside class="kanan1"><a class="lanjut1" href="http://127.0.0.1:5000/home"><div class="tulis-lanjut1">HOME </div><img src="{{ url_for('static', filename='img/Arrow 3.png')}}" alt=""></a></aside>
+    </div>
+</body>
+</html>
+<!-- Halaman check -->
+<!-- kondisi tidak normal -->
+
+<!-- backend -->

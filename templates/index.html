@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo pkm 1.png')}}" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style1.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <title>PKM-KC ATHERO</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='img/logo pkm navbar.png')}}" alt="">
+                <div class="tulisanpkm">PKM-KC USK</div>
+            </div>
+            <ul class="navbar-list">
+                <li><a href="#"><img src="{{ url_for('static', filename='img/Vector about.png')}}" alt="">ABOUT</a></li>
+                <li><a href="#"><img src="{{ url_for('static', filename='img/Vector team.png')}}" alt="">TEAM</a></li>
+                <li><a href="#"><img src="{{ url_for('static', filename='img/Vector contact.png')}}" alt="">CONTACT</a></li>
+            </ul>
+        </nav>
+            <aside><div class="bungkusan-1">
+                <p>HEALTH<br>CARE<br>CHECK<br>FOR<br>HEART</p>
+            </div>
+            <div class="bungkusan-2">
+                <p>PKM-KC Universitas Syiah Kuala<br>
+                    Electrical Engineering<br>
+                    Atherosclerosis Team</p>
+            </div>
+            </aside>
+            <main><img src="{{ url_for('static', filename='img/logo pkm 1 (2).png')}}" alt=""></main>
+            <div class="footer">
+                <a class="lanjut-start" href="http://127.0.0.1:5000/check"><div class="tulis-lanjut">START</div></a>
+            </div>
+    </div>
+</body>
+</html>
+<!-- backend -->

@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo pkm 1.png')}}" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style2.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <title>PKM-KC ATHERO</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo pkm navbar.png')}}" alt="">
+            <div class="tulisanpkm">PKM-KC USK</div>
+        </div>
+        <ul class="navbar-list">
+            <li><a href="#"><img src="{{ url_for('static', filename='img/Vector about.png')}}" alt="">ABOUT</a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/Vector team.png')}}" alt="">TEAM</a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/Vector contact.png')}}" alt="">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- isi content -->
+    <div class="container">
+            <div class="judul-hal"><div class="teks-judul">HASIL PENGUKURAN</div></div>
+            <aside class="kiri"><div class="monitoring"><div class="judul-card">HEART RATE</div><div id="BPM" class="monitor"></div></div></aside>
+            <aside class="kanan"><div class="monitoring"><div class="judul-card">SPO2</div><div id="SPO2" class="monitor"></div></div></aside>
+            <main><div class="grafik1"><img src="{{ url_for('static', filename='img/MONITOR PKM 1.png')}}" alt=""></div></main>
+            <div class="footer">
+                <a class="lanjut-home" href="http://127.0.0.1:5000/"><img src="{{ url_for('static', filename='img/Arrow 3.png')}}" alt=""><div class="tulis-lanjut"> HOME</div>
+                </a>
+                <a class="lanjut" href="http://127.0.0.1:5000/check/data"><div class="tulis-lanjut">Lanjutkan Pemeriksaan </div><img src="{{ url_for('static', filename='img/Arrow 3.png')}}" alt="">
+                </a>
+                
+            </div>
+    </div>
+
+    <!-- script -->
+    <script type="module" src="{{ url_for('static', filename='firebase-config.js')}}"></script>
+    <!-- Javascript -->
+    <!-- <script type="module" src="{{ url_for('static', filename='grafik.js')}}"></script> -->
+    <!-- script -->
+    <!-- <div id="chart_div"></div> -->
+</body>
+</html>
+<!-- backend -->

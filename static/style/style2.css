@@ -1,0 +1,224 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
+body {
+    background-image: url('../img/Desktop\ -\ 14.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    display: grid;
+    grid-template-areas: "judul-hal judul-hal"
+    "kiri kanan"
+    "grafik grafik"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 11% 13% 66%;
+}
+.kiri{
+    grid-area: kiri;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.kanan{
+    grid-area: kanan;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+nav {
+    height: 10.6%;
+    padding-top: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: linear-gradient(180deg, #519B52 -8.21%, #306745 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+main {
+    grid-area: grafik;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tulisanpkm {
+    margin-block: auto;
+    color: #000;
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.logo {
+    padding-left: 10%;
+    display: flex;
+}
+.footer {
+    grid-area: footer;
+    padding-right: 8.6%;
+    display: flex;
+    margin-top: -3%;
+    justify-content: right;
+    align-items: center;
+}
+.lanjut {
+    margin-right: 10%;
+}
+.monitoring {
+    display: grid;
+    justify-content: center;
+    width: 467px;
+    height: 89px;
+    border-radius: 10px;
+    background: rgba(52, 121, 80, 0.79);
+}
+.judul-card {
+    margin-top: 10px;
+    width: 97px;
+    height: 19px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+.monitor {
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.kiri .monitoring {
+    margin-right: 20px;
+}
+.kanan .monitoring {
+    margin-left: 20px;
+}
+.kiri .judul-card {
+    margin-left: 12%;
+}
+.kanan .judul-card {
+    margin-left: 3%;
+}
+.teks-judul {
+    margin-top: 34px;
+    width: 282px;
+    height: 28px;
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Krona One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.judul-hal {
+    grid-area: judul-hal;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.grafik1 {
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    width: 974px;
+    height: 403px;
+    border-radius: 10px;
+    background: #D9D9D9;
+}
+.lanjut {
+    margin-bottom: 1%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 254px;
+    height: 37px;
+    border-radius: 50px;
+    border: 1px solid #CE8D5E;
+    background: #CE8D5E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.tulis-lanjut {
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+.lanjut img {
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+}
+.grafik1 img {
+    width: 703px;
+    height: 384px;
+    border-radius: 10px;
+}
+.lanjut-home {
+    justify-self: left;
+    margin-right: 43%;
+    margin-bottom: 1%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 120px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 70px;
+    border: 1px solid #CE8D5E;
+    background: #CE8D5E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.lanjut-home img {
+    margin-right: 2%;
+    transform: rotate(180deg);
+}
